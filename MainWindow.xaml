@@ -29,8 +29,8 @@
                         <ColumnDefinition Width="491*"/>
                     </Grid.ColumnDefinitions>
                     <Button Content="Send Ping" HorizontalAlignment="Left" Margin="406,90,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Grid.Column="3"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="89,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="3"/>
-                    <Label Content="IP Address" HorizontalAlignment="Left" Margin="18,24,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="98,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="3"/>
+                    <Label Content="IP Address" HorizontalAlignment="Left" Margin="27,27,0,0" VerticalAlignment="Top"/>
                     <CheckBox Content="-t (ping until stopped)" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top" Grid.Column="3"/>
                     <CheckBox Content="-n count" HorizontalAlignment="Left" Margin="191,35,0,0" VerticalAlignment="Top" Grid.Column="3"/>
                     <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="67" Margin="180,24,0,0" VerticalAlignment="Top" Width="171" Grid.Column="3"/>
@@ -63,6 +63,11 @@
                     </Grid.ColumnDefinitions>
                     <DataGrid HorizontalAlignment="Left" Height="253" Margin="10,115,0,0" VerticalAlignment="Top" Width="746" Grid.ColumnSpan="2"/>
                     <Button Content="Send NSLookup" Grid.Column="1" HorizontalAlignment="Left" Margin="290,90,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click_1"/>
+                    <Label Content="DNS" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="60,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="OR" HorizontalAlignment="Left" Margin="102,38,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="60,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="IP" HorizontalAlignment="Left" Margin="35,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.224,0.51"/>
                 </Grid>
             </TabItem>
         </TabControl>
