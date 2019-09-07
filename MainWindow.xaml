@@ -14,10 +14,11 @@
         <TabControl HorizontalAlignment="Left" Height="406" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Grid.ColumnSpan="2">
             <TabItem Header="Trace Route">
                 <Grid Background="#FFE5E5E5">
-                    <DataGrid HorizontalAlignment="Left" Height="253" Margin="10,115,0,0" VerticalAlignment="Top" Width="746"/>
-                    <Button Content="Send Tracert" HorizontalAlignment="Left" Margin="681,90,0,0" VerticalAlignment="Top" Width="75"/>
+                    <DataGrid HorizontalAlignment="Left" Height="224" Margin="10,115,0,0" VerticalAlignment="Top" Width="746"/>
+                    <Button Content="Send Tracert" HorizontalAlignment="Left" Margin="681,90,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_3"/>
                     <Label Content="Hostname" HorizontalAlignment="Left" Margin="29,28,0,0" VerticalAlignment="Top"/>
                     <TextBox HorizontalAlignment="Left" Height="23" Margin="98,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Button Content="Clear" HorizontalAlignment="Left" Margin="681,348,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_4"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Ping">
@@ -43,31 +44,35 @@
                         <ComboBoxItem Content="10"/>
                         <ComboBoxItem Content="20"/>
                     </ComboBox>
-                    <DataGrid HorizontalAlignment="Left" Height="253" Margin="10,115,0,0" VerticalAlignment="Top" Width="746" Grid.ColumnSpan="4"/>
+                    <DataGrid HorizontalAlignment="Left" Height="224" Margin="10,115,0,0" VerticalAlignment="Top" Width="746" Grid.ColumnSpan="4"/>
+                    <Button Content="Clear" Grid.Column="3" HorizontalAlignment="Left" Margin="406,348,0,0" VerticalAlignment="Top" Width="75"/>
                 </Grid>
             </TabItem>
             <TabItem Header="IPConfig">
                 <Grid Background="#FFE5E5E5">
-                    <DataGrid HorizontalAlignment="Left" Height="253" Margin="10,115,0,0" VerticalAlignment="Top" Width="746"/>
-                    <Button Content="Send IPConfig" HorizontalAlignment="Left" Margin="662,90,0,0" VerticalAlignment="Top" Width="94"/>
+                    <DataGrid HorizontalAlignment="Left" Height="224" Margin="10,115,0,0" VerticalAlignment="Top" Width="746"/>
+                    <Button Content="Send IPConfig" HorizontalAlignment="Left" Margin="662,90,0,0" VerticalAlignment="Top" Width="94" Click="Button_Click_2"/>
                     <CheckBox Content="/all" HorizontalAlignment="Left" Margin="29,26,0,0" VerticalAlignment="Top"/>
                     <CheckBox Content="/release" HorizontalAlignment="Left" Margin="29,46,0,0" VerticalAlignment="Top"/>
                     <CheckBox Content="/renew" HorizontalAlignment="Left" Margin="29,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.576,-0.502"/>
+                    <Button Content="Clear" HorizontalAlignment="Left" Margin="681,348,0,0" VerticalAlignment="Top" Width="75"/>
                 </Grid>
             </TabItem>
             <TabItem Header="NS Lookup">
                 <Grid Background="#FFE5E5E5">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="347*"/>
-                        <ColumnDefinition Width="373*"/>
+                        <ColumnDefinition Width="134*"/>
+                        <ColumnDefinition Width="235*"/>
+                        <ColumnDefinition Width="397*"/>
                     </Grid.ColumnDefinitions>
-                    <DataGrid HorizontalAlignment="Left" Height="253" Margin="10,115,0,0" VerticalAlignment="Top" Width="746" Grid.ColumnSpan="2"/>
-                    <Button Content="Send NSLookup" Grid.Column="1" HorizontalAlignment="Left" Margin="290,90,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click_1"/>
+                    <DataGrid HorizontalAlignment="Left" Height="224" Margin="10,115,0,0" VerticalAlignment="Top" Width="746" Grid.ColumnSpan="3"/>
+                    <Button Content="Send NSLookup" Grid.Column="2" HorizontalAlignment="Left" Margin="290,90,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click_1"/>
                     <Label Content="DNS" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="60,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="60,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
                     <Label Content="OR" HorizontalAlignment="Left" Margin="102,38,0,0" VerticalAlignment="Top"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="60,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="60,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
                     <Label Content="IP" HorizontalAlignment="Left" Margin="35,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.224,0.51"/>
+                    <Button Content="Clear" Grid.Column="2" HorizontalAlignment="Left" Margin="312,348,0,0" VerticalAlignment="Top" Width="75"/>
                 </Grid>
             </TabItem>
         </TabControl>
