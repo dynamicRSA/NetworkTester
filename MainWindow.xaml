@@ -94,15 +94,19 @@
                 </Grid>
             </TabItem>
             <TabItem Header="DeAuth Attack" Height="22" VerticalAlignment="Top">
-                <Grid Background="#FFE5E5E5">
+                <Grid Background="#FFE5E5E5" Margin="-16,0,16,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="134*"/>
                         <ColumnDefinition Width="235*"/>
                         <ColumnDefinition Width="397*"/>
                     </Grid.ColumnDefinitions>
                     <DataGrid HorizontalAlignment="Left" Height="224" Margin="10,115,0,0" VerticalAlignment="Top" Width="746" Grid.ColumnSpan="3"/>
-                    <Button Content="Send" Grid.Column="2" HorizontalAlignment="Left" Margin="290,90,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click_1"/>
                     <Button Content="Clear" Grid.Column="2" HorizontalAlignment="Left" Margin="312,348,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_5"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="13,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+                    <Label Content="Wireless Card Name" HorizontalAlignment="Left" Margin="21,14,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="126"/>
+                    <CheckBox Content="Monitor Mode" HorizontalAlignment="Left" Margin="21,41,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="178"/>
+                    <Button Content="Step 1" HorizontalAlignment="Left" Margin="59,71,0,0" VerticalAlignment="Top" Width="75"/>
+                    <Button Content="Step 2" Grid.Column="2" HorizontalAlignment="Left" Margin="88,71,0,0" VerticalAlignment="Top" Width="75"/>
                 </Grid>
             </TabItem>
         </TabControl>
